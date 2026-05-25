@@ -42,6 +42,19 @@ Proceed with balanced defaults. Do **not** force `/smart-init` or block the sess
 
 Follow these steps in order. Skip a step only if the learner has already given you what it would have produced.
 
+### Compressed shape for trivial or obvious code
+
+When the target is genuinely small (a handful of lines) or obvious (one transformation, no branches, no pattern worth naming), do not run the full ceremony — adapt the shape:
+
+- Step 1 is silent — scope is unambiguous.
+- Step 2 is **one** lightweight thinking prompt. *"What would you predict it does with empty input?"* — not an extended interrogation.
+- Step 3 collapses to **one compact explanation block** covering responsibility, control flow, and the one or two edge cases that actually matter.
+- Step 4 (concept bridging) is **optional and usually skipped**. Manufacturing a pattern name for a three-line function is the kind of over-reading the skill warns against.
+- Steps 5–6 only fire if the learner's answer surfaces a misconception or an explicit follow-up.
+- Step 7 (transfer) **stays, but lightweight** — typically a testability prompt (*"how would you test this — what's the input the author might have forgotten?"*) rather than architectural transfer.
+
+The total session is 2–3 exchanges. Pedagogical integrity (thinking before explaining, transfer at the end) is preserved; ceremony is minimized.
+
 ### Step 1 — Understand scope
 
 Determine what the learner wants explained.

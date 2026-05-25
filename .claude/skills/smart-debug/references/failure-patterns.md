@@ -1,5 +1,7 @@
 # Failure patterns
 
+> **Read this first.** This catalog is a list of **candidate hypotheses, not diagnoses.** The entries below describe bug shapes that frequently produce specific symptoms — they do *not* tell you which one is causing the bug in front of you. **Symptom similarity is not proof.** Any catalog entry that becomes a working hypothesis must be falsified against evidence from the current case (Step 5 of the framework) before it counts as a finding. Treating the catalog as a verdict list — *"this looks like a stale closure, so it must be a stale closure"* — is exactly the failure mode the skill exists to prevent.
+
 This document is the catalog of common bug shapes, organized so you can move from *symptom* → *candidate categories* → *first probe* without enumerating thirty possibilities.
 
 Use it as a reference when narrowing the search space in Step 4, choosing a falsification probe in Step 5, or bridging the specific bug to a class the learner can recognize next time.
@@ -163,6 +165,8 @@ The bridges intentionally overlap with `smart-explain`'s `concept-bridging.md` (
 ---
 
 ## Mapping symptoms to candidate patterns
+
+> **Reminder.** The table below is a partition heuristic, not a verdict map. A row's *first candidates* are starting points for Step 5 falsification, not conclusions. Confidence in any candidate requires evidence specific to the current bug — symptom-match alone is not evidence.
 
 A rough cheat sheet for Step 4 partitioning:
 
