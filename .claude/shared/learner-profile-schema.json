@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "experience_level",
+    "current_role",
+    "primary_stack",
+    "learning_goals",
+    "weak_areas",
+    "explanation_depth"
+  ],
+  "properties": {
+    "experience_level": {
+      "type": "string",
+      "enum": ["beginner", "junior", "mid", "senior"]
+    },
+    "current_role": {
+      "type": "string"
+    },
+    "primary_stack": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "learning_goals": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "weak_areas": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "explanation_depth": {
+      "type": "string",
+      "enum": ["concise", "balanced", "deep"]
+    }
+  }
+}
